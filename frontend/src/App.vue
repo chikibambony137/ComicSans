@@ -1,47 +1,107 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <header>
+      <label class="head">
+          ComicSans
+      </label>
+    </header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <body>
+      <div class="universes">
 
-  <main>
-    <TheWelcome />
-  </main>
+          <button class="universe" id="dc">
+            <label class="label-bttn">DC</label>
+          </button>
+          
+          <button class="universe" id="marvel">
+            <label class="label-bttn">Marvel</label>
+          </button>
+
+          <button class="universe" id="bubble">
+            <label class="label-bttn">Bubble</label>
+          </button>
+        
+      </div>
+    </body>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
+    header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center; /* Центрирует по горизонтали */
+      align-items: center; /* Центрирует по вертикали */
+    }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+    .head {
+      position: relative;
+      width: 800px;
+      height: 200px;
+      display: flex;
+      justify-content: center; /* Центрирует содержимое внутри head */
+      align-items: center; /* Центрирует содержимое внутри head */
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+      color: rgb(255, 255, 255);
+      font-family: 'Sedgwick Ave Display', cursive;
+      font-size: 72px;
+      font-weight: 400;
+      line-height: 160px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+    .universes {
+      width: 100%;
+      position: relative;
+      top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+    .universe {
+      width: 20%;
+      height: 70px;
+      transform: skew(-20deg);
+      position: relative;
+      margin: 1%;
+    }
+
+    #dc {
+      background: rgba(3, 116, 157, 0.2)
+    }
+    #dc:hover {
+      background: rgba(3, 116, 157, 0.75)
+
+    }
+
+    #marvel {
+      background: rgba(150, 1, 1, 0.2)
+    }
+    #marvel:hover {
+      background: rgba(150, 1, 1, 0.75)
+    }
+
+    #bubble {
+      background: rgba(39, 54, 170, 0.2)
+    }
+    #bubble:hover {
+      background: rgba(39, 54, 170, 0.75)
+    }
+
+    .label-bttn {
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      transform: none;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 59px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
 </style>
+
