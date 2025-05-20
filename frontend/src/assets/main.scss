@@ -1,0 +1,43 @@
+
+$background-image: url("./images/MainBackground2.png");
+
+:root {
+    background: {
+        image: $background-image;
+        size: cover;
+    };
+}
+
+header {
+    width: 100%;
+    height: 100px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+    
+
+    label {
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center; /* Центрирует содержимое внутри head */
+        align-items: center; /* Центрирует содержимое внутри head */
+    
+        color: white;
+        line-height: 160px;
+        letter-spacing: 0%;
+        text-align: center;
+    
+        font: {
+            family: 'Sedgwick Ave Display', cursive;
+            size: 72px;
+            weight: 400;
+        }
+    }
+}
+
