@@ -4,24 +4,22 @@
 
 <template>
     <header>
-      <label>
-          ComicSans
-      </label>
+      <label> ComicSans </label>
     </header>
 
     <body>
       <div class="universes">
 
           <button id="dc">
-            <label>DC</label>
+            <label> DC </label>
           </button>
           
           <button id="marvel">
-            <label>Marvel</label>
+            <label> Marvel </label>
           </button>
 
           <button id="bubble">
-            <label>Bubble</label>
+            <label> Bubble </label>
           </button>
         
       </div>
@@ -29,6 +27,16 @@
 </template>
 
 <style lang="scss" scoped>
+
+    $dc-color-button-default: rgba(3, 116, 157, 0.2);
+    $dc-color-button-hover: rgba(0, 187, 255, 0.75);
+
+    $marvel-color-button-default: rgba(150, 1, 1, 0.2);
+    $marvel-color-button-hover: rgba(253, 0, 0, 0.75);
+
+    $bubble-color-button-default: rgba(39, 54, 170, 0.2);
+    $bubble-color-button-hover: rgba(50, 74, 255, 0.75);
+
 
     .universes {
       width: 100%;
@@ -65,26 +73,26 @@
     }
 
     #dc {
-      background: rgba(3, 116, 157, 0.2);
+      background: $dc-color-button-default;
 
       &:hover {
-        background: rgba(0, 187, 255, 0.75);
+        background: $dc-color-button-hover;
       }
     }
 
     #marvel {
-      background: rgba(150, 1, 1, 0.2);
+      background: $marvel-color-button-default;
 
       &:hover {
-        background: rgba(253, 0, 0, 0.75);
+        background: $marvel-color-button-hover;
       }
     }
 
     #bubble {
-      background: rgba(39, 54, 170, 0.2);
+      background: $bubble-color-button-default;
 
       &:hover {
-        background: rgba(50, 74, 255, 0.75);
+        background: $bubble-color-button-hover;
       }
     }
 
